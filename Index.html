@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODE-X | Experiência Premium</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<style>
+:root{
+    --primary:#031c1e;
+    --secondary:#61789a;
+    --dark:#0a0a0a;
+    --light:#f0f0f0;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--dark);
+    color:var(--light);
+    overflow-x:hidden;
+}
+
+.gradient-text{
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.typing-effect{
+    display:inline-block;
+    max-width:100%;
+    overflow:hidden;
+    white-space:normal;
+    animation:typing 3.5s steps(38,end) forwards;
+}
+
+@keyframes typing{
+    from{max-width:0}
+    to{max-width:100%}
+}
+
+.blink-cursor{
+    animation:blink 1s step-end infinite;
+}
+@keyframes blink{
+    50%{opacity:0}
+}
+
+.glass-card{
+    background:rgba(20,20,20,.7);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.1);
+    transition:.3s;
+}
+.glass-card:hover{
+    transform:translateY(-5px);
+}
+
+.float-animation{
+    animation:float 6s ease-in-out infinite;
+}
+@keyframes float{
+    50%{transform:translateY(-15px)}
+}
+
+.scroll-animate{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.6s;
+}
+.scroll-animate.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+img{
+    border-radius:px
+}
+</style>
+</head>
+
+<body>
+
+<header class="fixed w-full bg-black/90 backdrop-blur-md z-50 py-3 border-b border-gray-800/50 animate__animated animate__fadeInDown">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="images/Code.X.jpg" class="w-8 h-8">
+            <span class="font-semibold">CODE-X</span>
+        </div>
+        <nav class="hidden md:flex gap-6">
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="https://linktr.ee/Code.X.Web" target="_blank">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section class="min-h-screen flex items-center pt-32">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-start gap-16">
+
+<div class="lg:w-1/2 max-w-xl space-y-6 animate__animated animate__fadeInLeft">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <span class="gradient-text">CODE-X</span><br>
+        <span class="typing-effect">
+            Transformando ideias em experiências digitais
+        </span><span class="blink-cursor">|</span>
+    </h1>
+
+    <p class="text-gray-400">
+        Soluções web premium com tecnologia de ponta e design imersivo.
+    </p>
+
+    <a href="https://linktr.ee/Code.X.Web" target="_blank"
+       class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-black px-6 py-3 rounded hover:scale-105 transition">
+        Fale Conosco →
+    </a>
+</div>
+
+<div class="lg:w-1/2 max-w-md float-animation animate__animated animate__fadeInRight">
+<div class="glass-card p-6 rounded-xl">
+<pre class="text-cyan-400"><code>const portfolio = {
+ design: 'sofisticado',
+ performance: 'otimizado',
+ resultado: 'excepcional'
+};</code></pre>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="servicos" class="py-24 bg-gray-900/30">
+<div class="container mx-auto px-4">
+<h2 class="text-center text-3xl font-bold mb-12 gradient-text scroll-animate">
+Nossas Especialidades
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+<div class="glass-card p-6 scroll-animate">
+<h3 class="font-bold mb-2">Desenvolvimento Web</h3>
+<p class="text-gray-400 text-sm">Sites modernos e rápidos.</p>
+</div>
+
+<div class="glass-card p-6 scroll-animate">
+<h3 class="font-bold mb-2">Performance</h3>
+<p class="text-gray-400 text-sm">Carregamento ultra otimizado.</p>
+</div>
+
+<div class="glass-card p-6 scroll-animate">
+<h3 class="font-bold mb-2">UI/UX</h3>
+<p class="text-gray-400 text-sm">Experiência intuitiva.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="portfolio" class="py-24">
+<div class="container mx-auto px-4">
+<h2 class="text-center text-3xl font-bold mb-12 gradient-text scroll-animate">
+Portfólio
+</h2>
+
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+<div class="glass-card overflow-hidden scroll-animate">
+<img src="images/vidaesaudelogo.png">
+<div class="p-4">
+<h3 class="font-bold">Clínica Vida e Saúde</h3>
+<h4>Esse site não é real, está sendo usado de portifólio e como um treinamento de linguagens e animação. Bugs serão corrigidos!</h4>
+<a href="https://equipedevcodex-netizen.github.io/Portif-lio-Vida-E-Sa-de/" target="_blank" class="text-cyan-400 text-sm">Visitar →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="py-6 text-center text-gray-500 border-t border-gray-800">
+© 2025 CODE-X
+</footer>
+
+<script>
+const els=document.querySelectorAll('.scroll-animate')
+window.addEventListener('scroll',()=>{
+    els.forEach(el=>{
+        if(el.getBoundingClientRect().top < window.innerHeight*0.85){
+            el.classList.add('visible')
+        }
+    })
+})
+</script>
+
+</body>
+</html>
