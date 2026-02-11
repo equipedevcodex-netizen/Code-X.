@@ -86,15 +86,20 @@ img{
 <body>
 
 <header class="fixed w-full bg-black/90 backdrop-blur-md z-50 py-3 border-b border-gray-800/50 animate__animated animate__fadeInDown">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <img src="images/codex.logonova.jpeg" class="w-full h-20 object-cover">
-        </div>
-        <nav class="hidden md:flex gap-6">
-            <a href="#servicos">Serviços</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="https://linktr.ee/Code.X.Web" target="_blank">Contato</a>
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+        
+        <!-- LOGO -->
+        <img src="images/codex.logonova.jpeg"
+             alt="Logo CODE-X"
+             class="h-14 w-auto object-contain">
+
+        <!-- MENU -->
+        <nav class="hidden md:flex gap-6 text-sm">
+            <a href="#servicos" class="hover:text-cyan-400 transition">Serviços</a>
+            <a href="#portfolio" class="hover:text-cyan-400 transition">Portfólio</a>
+            <a href="https://linktr.ee/Code.X.Web" target="_blank" class="hover:text-cyan-400 transition">Contato</a>
         </nav>
+
     </div>
 </header>
 
@@ -167,9 +172,7 @@ Portfólio
 
 <div class="max-w-5xl mx-auto space-y-8">
 
-<!-- PROJETO 1 -->
 <div class="glass-card overflow-hidden scroll-animate">
-    
     <div class="p-4">
         <h3 class="font-bold">Clínica Vida e Saúde</h3>
         <h4 class="text-sm text-gray-400">
@@ -182,9 +185,7 @@ Portfólio
     </div>
 </div>
 
-<!-- PROJETO 2 -->
 <div class="glass-card overflow-hidden scroll-animate">
-    
     <div class="p-4">
         <h3 class="font-bold">Preço do Bitcoin</h3>
         <h4 class="text-sm text-gray-400">
@@ -219,39 +220,4 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
