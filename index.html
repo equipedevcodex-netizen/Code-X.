@@ -21,6 +21,17 @@ body{
     background:var(--dark);
     color:var(--light);
     overflow-x:hidden;
+    body::after{
+    content:"";
+    position:fixed;
+    left:50%;
+    top:0;
+    width:2px;
+    height:100vh;
+    background:red;
+    z-index:9999;
+}
+
 }
 
 .gradient-text{
@@ -85,14 +96,13 @@ img{
 
 <body>
 
-<header class="fixed top-0 left-0 w-full bg-black z-50">
+<header class="fixed w-full bg-black/90 backdrop-blur-md z-50 py-3 border-b border-gray-800/50">
 
     <div class="max-w-7xl mx-auto px-4 relative flex items-center">
 
         <!-- LOGO CENTRAL -->
         <div class="absolute left-1/2 -translate-x-1/2">
-            <img src="codexlogo"
-     style="position:absolute; left:50%; transform:translateX(-50%); height:56px;">
+            <img src="codexlogo">
 
                  alt="Logo CODE-X"
                  class="h-14 w-auto object-contain">
@@ -226,6 +236,7 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
 
 
 
