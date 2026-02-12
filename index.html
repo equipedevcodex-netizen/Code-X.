@@ -21,17 +21,6 @@ body{
     background:var(--dark);
     color:var(--light);
     overflow-x:hidden;
-    body::after{
-    content:"";
-    position:fixed;
-    left:50%;
-    top:0;
-    width:2px;
-    height:100vh;
-    background:red;
-    z-index:9999;
-}
-
 }
 
 .gradient-text{
@@ -89,7 +78,7 @@ body{
 }
 
 img{
-    border-radius:12px
+    border-radius:12px;
 }
 </style>
 </head>
@@ -98,18 +87,17 @@ img{
 
 <header class="fixed w-full bg-black/90 backdrop-blur-md z-50 py-3 border-b border-gray-800/50">
 
-    <div class="max-w-7xl mx-auto px-4 relative flex items-center">
+    <div class="flex items-center justify-between px-4">
 
-        <!-- LOGO CENTRAL -->
-        <div class="absolute left-1/2 -translate-x-1/2">
+        <!-- LOGO ESQUERDA -->
+        <div>
             <img src="codexlogo"
-
                  alt="Logo CODE-X"
                  class="h-14 w-auto object-contain">
         </div>
 
         <!-- MENU DIREITA -->
-        <nav class="ml-auto hidden md:flex gap-6 text-sm">
+        <nav class="hidden md:flex gap-6 text-sm">
             <a href="#servicos" class="hover:text-cyan-400 transition">Serviços</a>
             <a href="#portfolio" class="hover:text-cyan-400 transition">Portfólio</a>
             <a href="https://linktr.ee/Code.X.Web" target="_blank" class="hover:text-cyan-400 transition">Contato</a>
@@ -236,6 +224,7 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
 
 
 
